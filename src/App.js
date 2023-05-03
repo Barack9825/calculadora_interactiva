@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import freecodecamplogo from './imagenes/descarga.jfif'
-
+import freecodecamplogo from './imagenes/descarga.jfif';
+import Boton from './componentes/Boton';
 function App() {
   return (
     <div className="App">
@@ -11,8 +11,17 @@ function App() {
         className='freecodecamp-logo'
         alt='logo de freecodeCamp'
       />
-
       </div>
+      <div className='contenedor-calculadora'>
+      <div className='fila'>
+        <Boton>1</Boton>
+        <Boton>+</Boton>
+      </div>
+      <div className='fila'></div>
+      <div className='fila'></div>
+      <div className='fila'></div>
+      <div className='fila'></div>
+     </div>
     </div>
   );
 }
